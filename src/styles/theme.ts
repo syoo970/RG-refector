@@ -13,6 +13,8 @@ export const theme = createTheme({
     },
     rg: {
       main: "#4AD395",
+      contrastText: "#fff",
+      dark: "#339368",
     },
   },
 });

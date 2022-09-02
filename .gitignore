@@ -9,6 +9,9 @@
 /config
 config/
 
+/scripts
+scripts/
+
 # testing
 /coverage
 

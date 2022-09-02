@@ -1,6 +1,4 @@
 declare module "@mui/material/styles" {
-  interface Theme {}
-  interface ThemeOptions {}
   interface Palette {
     rg: Palette["primary"];
   }
