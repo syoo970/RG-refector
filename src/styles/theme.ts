@@ -20,4 +20,15 @@ export const theme = createTheme({
       dark: "#339368",
     },
   },
+  components: {
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          p: {
+            marginLeft: 0,
+          },
+        },
+      },
+    },
+  },
 });
