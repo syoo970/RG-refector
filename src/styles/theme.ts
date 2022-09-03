@@ -1,7 +1,10 @@
 import { createTheme } from "@mui/material/styles";
 
-declare module "@mui/material/Button" {
+declare module "@mui/material" {
   interface ButtonPropsColorOverrides {
+    rg: true;
+  }
+  interface IconButtonPropsColorOverrides {
     rg: true;
   }
 }
