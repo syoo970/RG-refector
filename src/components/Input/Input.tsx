@@ -8,7 +8,6 @@ import { TextField, TextFieldProps } from "@mui/material";
 
 interface MuiProps {
   textFieldProps?: TextFieldProps;
-  labelName?: string;
 }
 
 const Input = <

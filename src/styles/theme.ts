@@ -1,12 +1,13 @@
 import { createTheme } from "@mui/material/styles";
 
+interface CustomColors {
+  rg: true;
+}
+
 declare module "@mui/material" {
-  interface ButtonPropsColorOverrides {
-    rg: true;
-  }
-  interface IconButtonPropsColorOverrides {
-    rg: true;
-  }
+  interface ButtonPropsColorOverrides extends CustomColors {}
+  interface IconButtonPropsColorOverrides extends CustomColors {}
+  interface ChipPropsColorOverrides extends CustomColors {}
 }
 
 export const theme = createTheme({
