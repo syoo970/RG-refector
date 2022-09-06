@@ -3,6 +3,12 @@ export const customComponents = {
     error: {
       color: "red",
     },
+    fontFamily: [
+      "SUIT-Medium",
+      "Pretendard-Regular",
+      "Roboto",
+      "sans-serif",
+    ].join(","),
   },
   components: {
     MuiTextField: {
@@ -33,14 +39,6 @@ export const customComponents = {
           border: "2px solid #4AD395",
         },
       },
-    },
-    typography: {
-      fontFamily: [
-        "SUIT-Medium",
-        "Pretendard-Regular",
-        "Roboto",
-        "sans-serif",
-      ].join(","),
     },
   },
 };

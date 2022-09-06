@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { customComponents } from "./customComponents";
 import { customPalette } from "./customPalette";
 
@@ -15,7 +15,9 @@ declare module "@mui/material" {
   }
 }
 
-export const theme = createTheme({
-  ...customPalette,
-  ...customComponents,
-});
+export const theme = responsiveFontSizes(
+  createTheme({
+    ...customPalette,
+    ...customComponents,
+  })
+);
