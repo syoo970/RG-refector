@@ -1,4 +1,9 @@
 export const customComponents = {
+  typography: {
+    error: {
+      color: "red",
+    },
+  },
   components: {
     MuiTextField: {
       styleOverrides: {
@@ -28,6 +33,14 @@ export const customComponents = {
           border: "2px solid #4AD395",
         },
       },
+    },
+    typography: {
+      fontFamily: [
+        "SUIT-Medium",
+        "Pretendard-Regular",
+        "Roboto",
+        "sans-serif",
+      ].join(","),
     },
   },
 };
