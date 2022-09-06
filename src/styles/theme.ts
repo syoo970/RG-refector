@@ -10,6 +10,7 @@ declare module "@mui/material" {
   interface ButtonPropsColorOverrides extends CustomColors {}
   interface IconButtonPropsColorOverrides extends CustomColors {}
   interface ChipPropsColorOverrides extends CustomColors {}
+  interface CheckboxPropsColorOverrides extends CustomColors {}
   interface TypographyPropsVariantOverrides {
     error: true;
   }
