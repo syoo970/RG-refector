@@ -1,4 +1,6 @@
 import { createTheme } from "@mui/material/styles";
+import { customComponents } from "./customComponents";
+import { customPalette } from "./customPalette";
 
 interface CustomColors {
   rg: true;
@@ -11,25 +13,6 @@ declare module "@mui/material" {
 }
 
 export const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#4AD395",
-    },
-    rg: {
-      main: "#4AD395",
-      contrastText: "#fff",
-      dark: "#339368",
-    },
-  },
-  components: {
-    MuiTextField: {
-      styleOverrides: {
-        root: {
-          p: {
-            marginLeft: 0,
-          },
-        },
-      },
-    },
-  },
+  ...customPalette,
+  ...customComponents,
 });
