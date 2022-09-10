@@ -5,6 +5,7 @@ import { CookiesProvider } from "react-cookie";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Global } from "@emotion/react";
 import { ThemeProvider } from "@mui/material";
+import axios from "axios";
 import reset from "@/styles/reset";
 import reportWebVitals from "./reportWebVitals";
 import { theme } from "@/styles/theme";
@@ -21,6 +22,8 @@ const queryClient = new QueryClient({
     },
   },
 });
+// axios default settings
+axios.defaults.baseURL = "https://rg-server.p-e.kr";
 
 root.render(
   <React.StrictMode>
