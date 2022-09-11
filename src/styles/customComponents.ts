@@ -40,5 +40,12 @@ export const customComponents = {
         },
       },
     },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "white",
+        },
+      },
+    },
   },
 };

@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Global } from "@emotion/react";
 import { ThemeProvider } from "@mui/material";
 import axios from "axios";
+import { BrowserRouter } from "react-router-dom";
 import reset from "@/styles/reset";
 import reportWebVitals from "./reportWebVitals";
 import { theme } from "@/styles/theme";
@@ -27,16 +28,18 @@ axios.defaults.baseURL = "https://rg-server.p-e.kr";
 
 root.render(
   <React.StrictMode>
-    <CookiesProvider>
-      <QueryClientProvider client={queryClient}>
-        <RecoilRoot>
-          <ThemeProvider theme={theme}>
-            <Global styles={reset} />
-            <App />
-          </ThemeProvider>
-        </RecoilRoot>
-      </QueryClientProvider>
-    </CookiesProvider>
+    <BrowserRouter>
+      <CookiesProvider>
+        <QueryClientProvider client={queryClient}>
+          <RecoilRoot>
+            <ThemeProvider theme={theme}>
+              <Global styles={reset} />
+              <App />
+            </ThemeProvider>
+          </RecoilRoot>
+        </QueryClientProvider>
+      </CookiesProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
