@@ -1,4 +1,4 @@
-import { Dialog, DialogProps, DialogContent } from "@mui/material";
+import { Dialog, DialogProps } from "@mui/material";
 import useModal from "@/recoil/hooks/useModal";
 import Transition from "@/components/Transition";
 
@@ -16,10 +16,9 @@ const Modal = ({ ...props }: Omit<DialogProps, "open">) => {
       {...props}
       open={open}
       onClose={handleClose}
+      fullWidth
     >
-      <DialogContent>
-        <Target />
-      </DialogContent>
+      <Target />
     </Dialog>
   );
 };
