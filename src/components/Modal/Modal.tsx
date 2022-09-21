@@ -16,7 +16,6 @@ const Modal = ({ ...props }: Omit<DialogProps, "open">) => {
       {...props}
       open={open}
       onClose={handleClose}
-      fullWidth
     >
       <Target />
     </Dialog>

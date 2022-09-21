@@ -24,7 +24,7 @@ const queryClient = new QueryClient({
   },
 });
 // axios default settings
-axios.defaults.baseURL = "https://rg-server.p-e.kr";
+axios.defaults.baseURL = "https://rg-server.p-e.kr/api/v1";
 
 root.render(
   <React.StrictMode>
