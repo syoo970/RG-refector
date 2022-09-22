@@ -1,16 +1,16 @@
 import { Routes, Route } from "react-router-dom";
-import { Redirect, MainPage } from "./pages";
-import NavBar from "@/components/NavBar";
+import { Redirect, MainPage, Entry, RegisterPage, LoginPage } from "./pages";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/redirect" element={<Redirect />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Entry />}>
+        <Route index element={<MainPage />} />
+        <Route path="register" element={<RegisterPage />} />
+      </Route>
+      <Route path="/redirect" element={<Redirect />} />
+      <Route path="login" element={<LoginPage />} />
+    </Routes>
   );
 }
 

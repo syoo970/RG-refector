@@ -16,7 +16,7 @@ const NavBar = () => {
   const isAuth = useRecoilValue(authState);
 
   return (
-    <AppBar>
+    <AppBar position="sticky">
       <Container>
         <Toolbar>
           <PageMenu pages={pages} />

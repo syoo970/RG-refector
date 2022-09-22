@@ -1,9 +1,7 @@
 import axios from "axios";
-import { OAuthLoginProp, OAuthResponse } from "./interfaces/auth.interface";
+import { OAuthResponse } from "./interfaces/auth.interface";
 
-export const oauthLogin = async (
-  authorizationCode: OAuthLoginProp
-): OAuthResponse => {
+export const oauthLogin = async (authorizationCode: string): OAuthResponse => {
   const result = await axios.post("/users/oauth/login", {
     authorizationCode,
   });

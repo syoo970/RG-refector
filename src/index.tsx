@@ -20,11 +20,12 @@ const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       refetchOnWindowFocus: false,
+      notifyOnChangeProps: "all",
     },
   },
 });
 // axios default settings
-axios.defaults.baseURL = "https://rg-server.p-e.kr/api/v1";
+axios.defaults.baseURL = "https://rg-server.p-e.kr:443/api/v1";
 
 root.render(
   <React.StrictMode>
