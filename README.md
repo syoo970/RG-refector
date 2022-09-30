@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+# 프로젝트 개요
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+RG(Riding is Good) 프로젝트 중 담당 하지 않았던 부분을 구현하고, 기존 코드를 개선하기 위한 리팩토링 프로젝트입니다!.
 
-## Available Scripts
+- 카카오 소셜 로그인 기능 구현
+- 라이딩 생성 페이지, 유저 페이지 구현
+- MUI palette 커스터마이징
+- react-query를 custom hook화 하여 추상화 단계 높여 코드 가독성 개선
+- react-query를 통한 client state와 server state 분리
 
-In the project directory, you can run:
+# 향후 계획
 
-### `yarn start`
+카카오 로그인과 관련된 도메인 등록 문제(현재 제 계정이 아닌 문제입니다)로 인해 배포 계획은 없습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# 프로젝트 실행
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- yarn을 통해 package 설치 후 `yarn start` 혹은 yarn.lock을 삭제하고 `npm install` 후 `npm start`를 통해 시작
 
-### `yarn test`
+# storybook
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `yarn storybook`을 통해 storybook 실행
